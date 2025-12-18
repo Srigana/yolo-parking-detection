@@ -1,4 +1,4 @@
-# 🚀 Dual-Model Vehicle Detection System (YOLOv5 & YOLOv8)
+# 🚀 Containerized Parking Surveillance Pipeline: YOLOv5 vs. YOLOv8
 
 [![Docker](https://img.shields.io/badge/Docker-Enabled-blue?logo=docker)](https://www.docker.com/)
 [![Flask](https://img.shields.io/badge/Framework-Flask-lightgrey?logo=flask)](https://flask.palletsprojects.com/)
