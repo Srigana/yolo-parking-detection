@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Detection Results</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <style>
+      body {
+        background-color: #82f98e; 
+      }
+      .image-container {
+        margin-bottom: 20px;
+        background: white;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      }
+      .card {
+        margin-top: 50px; /* Reduced margin for better layout */
+      }
+      img {
+        border-radius: 5px;
+        border: 1px solid #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="my-4 text-center">Object Detection Results</h1>
+      
+      <div class="card mb-4">
+        <div class="card-body">
+          <h5 class="card-title">Detection Summary</h5>
+          <p class="card-text"><strong>Model V5:</strong> {{result_str}}</p>
+          <p class="card-text"><strong>Model V8:</strong> {{result_str2}}</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="image-container text-center">
+            <h2>YOLO v5</h2>
+            <img src="{{ url_for('static', filename=image1) }}" alt="YOLOv5 Result" class="img-fluid" />
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="image-container text-center">
+            <h2>YOLO v8</h2>
+            <img src="{{ url_for('static', filename=image2) }}" alt="YOLOv8 Result" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center my-4">
+        <a href="/" class="btn btn-primary">Analyze Another Image</a>
+      </div>
+    </div>
+  </body>
+</html>

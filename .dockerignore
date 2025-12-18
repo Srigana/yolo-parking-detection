@@ -1,0 +1,24 @@
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Large YOLO/ML files
+runs/
+datasets/
+*.pt
+*.onnx
+
+# Environment and local IDE settings
+.env
+.venv
+venv/
+.git
+.vscode
+.idea
+
+# Docker/OS specific
+Dockerfile
+.dockerignore
+.DS_Store

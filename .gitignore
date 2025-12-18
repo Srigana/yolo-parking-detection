@@ -1,5 +1,8 @@
-venv/
-.vscode
-*.pt
+__pycache__/
 *.pyc
-static/*.png
+venv/
+.DS_Store
+runs/
+static/yolov5/runs/
+uploaded_images/
+.env

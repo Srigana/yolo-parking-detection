@@ -1,0 +1,5 @@
+train: /kaggle/input/fair1m-dataset-for-yolo/processed_dataset/images/train
+val: /kaggle/input/fair1m-dataset-for-yolo/processed_dataset/images/val
+text: /kaggle/input/fair1m-dataset-for-yolo/processed_dataset/images/test
+nc: 8
+names: ['plane','small_vehicle','larger_vehicle','games_court','ship','round_about','intersection','bridge']
